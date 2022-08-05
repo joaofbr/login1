@@ -17,18 +17,32 @@
         <img id="background" src="..//img/00121.png" alt="">
     </div>
     <div class="container">
-        <div class="container-fluid">
-            <form>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Username/E-mail" aria-label="Username" aria-describedby="basic-addon1">
+        <div data-aos-duration="1000" data-aos="fade-right" class="container-fluid">
+            <form data-aos="fade-left">
+                <div id="divText">
+                    <h1 id="textLogin">LOGIN</h1>
                 </div>
                 <div class="input-group mb-3">
-                    <input id="password" type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
-                    <span class="input-group-text"><i class="fa-solid fa-eye"></i></span>
+                    <input type="text" style="color: white;" class="form-control" placeholder="Username / E-mail" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input id="password" type="password" style="color: white;" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-eye"></i> </button>
+                </div>
+                <button type="submit" class="btn btn-info">Entrar</button>
+                <div class="info">
+                    <a id="login" href="#">Esqueceu sua senha?</a>
+                    <p id="textLogin">Não tem uma conta? <a id="login" href="#">Cadastrar</a></p>
                 </div>
             </form>
         </div>
     </div>
+    <!--animação-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
